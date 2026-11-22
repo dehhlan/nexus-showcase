@@ -1,0 +1,134 @@
+{
+  "file": "nexus-one-prepared.glb",
+  "bytes": 10038792,
+  "MiB": 9.57,
+  "version": 2,
+  "sceneNodes": 37,
+  "transformableParts": 36,
+  "meshes": 36,
+  "primitives": 44,
+  "triangles": 17636,
+  "positionVerticesSummed": 11451,
+  "materials": 20,
+  "shellVariants": [
+    "NEXUS Shell Finish \u2014 Black",
+    "NEXUS Shell Finish \u2014 Silver",
+    "NEXUS Shell Finish \u2014 White"
+  ],
+  "images": [
+    {
+      "name": "feb9026352723abc",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 22647
+    },
+    {
+      "name": "2ff4255cd47d454f",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 25564
+    },
+    {
+      "name": "el101_protein_leather_normal",
+      "format": "JPEG",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 2257261
+    },
+    {
+      "name": "el101_col_1a1a1c_leather",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 49287
+    },
+    {
+      "name": "el101_scrim_normal",
+      "format": "JPEG",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 2390242
+    },
+    {
+      "name": "el101_over_ear_headphones_scrim_left",
+      "format": "JPEG",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 688102
+    },
+    {
+      "name": "el101_over_ear_headphones_scrim_right",
+      "format": "JPEG",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 689083
+    },
+    {
+      "name": "el101_soft_normal",
+      "format": "JPEG",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 1772472
+    },
+    {
+      "name": "el101_col_40444a_plastic",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 44026
+    },
+    {
+      "name": "36272c6c5285d76d",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 22306
+    },
+    {
+      "name": "el101_brushed_normal",
+      "format": "JPEG",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 1457444
+    },
+    {
+      "name": "el101_col_b0b2b6_metal",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 78231
+    },
+    {
+      "name": "164339f80a5943c6",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 22081
+    }
+  ],
+  "internalComponents": [
+    "Left Acoustic Baffle",
+    "Left Speaker Driver Basket",
+    "Left Diaphragm",
+    "Left Voice Coil",
+    "Left Magnet Assembly",
+    "Left Magnet Core",
+    "Left Acoustic Damping Ring",
+    "Right Acoustic Baffle",
+    "Right Speaker Driver Basket",
+    "Right Diaphragm",
+    "Right Voice Coil",
+    "Right Magnet Assembly",
+    "Right Magnet Core",
+    "Right Acoustic Damping Ring",
+    "Right Internal Circuit Board",
+    "DSP / Codec Package",
+    "Wireless Module",
+    "Battery Assembly",
+    "Battery Retainer",
+    "Flexible Interconnect",
+    "Antenna Flex"
+  ]
+}

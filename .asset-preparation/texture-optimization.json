@@ -1,0 +1,93 @@
+[
+  {
+    "texture": "00-feb9026352723abc.png",
+    "format": "PNG",
+    "dimensions": "1024x1024",
+    "bytes": 22647,
+    "policy": "resized from 2K for memory and transfer reduction"
+  },
+  {
+    "texture": "01-2ff4255cd47d454f.png",
+    "format": "PNG",
+    "dimensions": "1024x1024",
+    "bytes": 25564,
+    "policy": "resized from 2K for memory and transfer reduction"
+  },
+  {
+    "texture": "02-el101_protein_leather_normal.jpg",
+    "format": "JPG",
+    "dimensions": "2048x2048",
+    "bytes": 2257261,
+    "policy": "retained for close-up surface detail"
+  },
+  {
+    "texture": "03-el101_col_1a1a1c_leather.jpg",
+    "format": "JPG",
+    "dimensions": "1024x1024",
+    "bytes": 49287,
+    "policy": "resized from 2K for memory and transfer reduction"
+  },
+  {
+    "texture": "04-el101_scrim_normal.jpg",
+    "format": "JPG",
+    "dimensions": "2048x2048",
+    "bytes": 2390242,
+    "policy": "retained for close-up surface detail"
+  },
+  {
+    "texture": "05-el101_over_ear_headphones_scrim_left.jpg",
+    "format": "JPG",
+    "dimensions": "2048x2048",
+    "bytes": 688102,
+    "policy": "retained for close-up surface detail"
+  },
+  {
+    "texture": "06-el101_over_ear_headphones_scrim_right.jpg",
+    "format": "JPG",
+    "dimensions": "2048x2048",
+    "bytes": 689083,
+    "policy": "retained for close-up surface detail"
+  },
+  {
+    "texture": "07-el101_soft_normal.jpg",
+    "format": "JPG",
+    "dimensions": "2048x2048",
+    "bytes": 1772472,
+    "policy": "retained for close-up surface detail"
+  },
+  {
+    "texture": "08-el101_col_40444a_plastic.jpg",
+    "format": "JPG",
+    "dimensions": "1024x1024",
+    "bytes": 44026,
+    "policy": "resized from 2K for memory and transfer reduction"
+  },
+  {
+    "texture": "09-36272c6c5285d76d.png",
+    "format": "PNG",
+    "dimensions": "1024x1024",
+    "bytes": 22306,
+    "policy": "resized from 2K for memory and transfer reduction"
+  },
+  {
+    "texture": "10-el101_brushed_normal.jpg",
+    "format": "JPG",
+    "dimensions": "2048x2048",
+    "bytes": 1457444,
+    "policy": "retained for close-up surface detail"
+  },
+  {
+    "texture": "11-el101_col_b0b2b6_metal.jpg",
+    "format": "JPG",
+    "dimensions": "1024x1024",
+    "bytes": 78231,
+    "policy": "resized from 2K for memory and transfer reduction"
+  },
+  {
+    "texture": "12-164339f80a5943c6.png",
+    "format": "PNG",
+    "dimensions": "1024x1024",
+    "bytes": 22081,
+    "policy": "resized from 2K for memory and transfer reduction"
+  }
+]

@@ -1,0 +1,198 @@
+.product-experience__canvas,
+.product-experience__canvas > div {
+  position: fixed !important;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none !important;
+}
+
+.product-experience__canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.scene-controls {
+  position: fixed;
+  z-index: 5;
+  top: 103px;
+  right: var(--page-gutter);
+  width: min(310px, calc(100vw - 44px));
+  padding: 13px 15px 12px;
+  border: 1px solid rgba(216, 227, 237, .16);
+  background: rgba(9, 11, 13, .96);
+  color: #e6e9ec;
+  pointer-events: auto;
+}
+
+.scene-controls__stage {
+  display: grid;
+  gap: 6px;
+  min-height: 37px;
+  color: #d7dde2;
+  font: 10px var(--mono);
+  letter-spacing: .035em;
+}
+
+.scene-controls__eyebrow,
+.scene-controls__stage small {
+  color: #8297a9;
+  font: 8px var(--mono);
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.scene-controls__stage small {
+  color: #929ba4;
+  letter-spacing: .04em;
+  text-transform: none;
+}
+
+.scene-controls__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(216, 227, 237, .13);
+}
+
+.finish-picker,
+.zoom-controls {
+  display: flex;
+  align-items: center;
+}
+
+.finish-picker { gap: 7px; }
+
+.finish-picker__option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 5px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #959ca3;
+  font: 9px var(--mono);
+  cursor: pointer;
+}
+
+.finish-picker__option[aria-pressed="true"] {
+  border-color: rgba(191, 209, 223, .43);
+  color: #eef1f3;
+}
+
+.finish-picker__option > span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(236, 240, 244, .45);
+  border-radius: 50%;
+}
+
+.finish-picker__option--black > span { background: #22272b; }
+.finish-picker__option--silver > span { background: linear-gradient(135deg, #e8edf0, #7d858c); }
+.finish-picker__option--white > span { background: #f0f1ee; }
+
+.zoom-controls { gap: 7px; color: #9ca3aa; font: 8px var(--mono); }
+.zoom-controls button {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(216, 227, 237, .22);
+  background: transparent;
+  color: #e4e9ed;
+  font-size: 16px;
+  cursor: pointer;
+}
+.zoom-controls button:disabled { opacity: .36; cursor: default; }
+
+.scene-controls__hint {
+  margin: 9px 0 0;
+  color: #76818a;
+  font: 8px var(--mono);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.component-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: max-content;
+  max-width: 165px;
+  padding: 7px 9px 7px 10px;
+  border-left: 1px solid #9bb7ce;
+  background: rgba(7, 9, 11, .86);
+  color: #e2e7eb;
+  font: 8px var(--mono);
+  letter-spacing: .06em;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .16);
+}
+
+.component-label small {
+  color: #93a0aa;
+  font: 7px var(--mono);
+  letter-spacing: .045em;
+}
+
+.scene-loading,
+.scene-error {
+  padding: 12px 15px;
+  border: 1px solid rgba(216, 227, 237, .18);
+  background: rgba(9, 11, 13, .9);
+  color: #cad3db;
+  font: 10px var(--mono);
+  letter-spacing: .08em;
+}
+
+.scene-error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: min(440px, 88vw);
+  transform: translate(-50%, -50%);
+  color: #f0c9c9;
+  pointer-events: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .scene-controls { top: 84px; }
+}
+
+@media (max-width: 600px) {
+  .scene-controls {
+    top: 108px;
+    right: var(--page-gutter);
+    width: min(290px, calc(100vw - 44px));
+    padding: 10px 11px 9px;
+  }
+  .scene-controls__row { gap: 6px; }
+  .finish-picker { gap: 2px; }
+  .finish-picker__option { gap: 4px; padding: 0 3px; font-size: 8px; }
+  .zoom-controls { gap: 4px; }
+  .zoom-controls button { width: 28px; height: 30px; }
+  .scene-controls__hint { margin-top: 7px; font-size: 7px; }
+  .component-label { max-width: 138px; padding: 6px 7px 6px 8px; font-size: 7px; }
+  .component-label small { font-size: 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-experience__canvas { scroll-behavior: auto; }
+}

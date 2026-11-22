@@ -1,0 +1,736 @@
+{
+  "asset": "NEXUS ONE — prepared headphone assembly",
+  "coordinateUnits": "metres",
+  "source": "Innerscene over-ear-headphones-de211466.glb (CC0 1.0)",
+  "defaultPose": "assembled",
+  "illustrativeInternalComponents": true,
+  "parts": [
+    {
+      "name": "Control buttons and LED",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.026,
+        -0.02,
+        -0.012
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Driver scrim, left",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.034,
+        -0.012,
+        0.0
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Driver scrim, right",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.034,
+        -0.012,
+        0.0
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Ear cushion, left",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.02,
+        -0.012,
+        0.0
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Ear cushion, right",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.02,
+        -0.012,
+        0.0
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Earcup outer cap, left",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.028,
+        -0.012,
+        0.0
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Earcup outer cap, right",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.028,
+        -0.012,
+        0.0
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Earcup shell, left",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.016,
+        -0.018,
+        0.0
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Earcup shell, right",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.016,
+        -0.018,
+        0.0
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Headband",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.0,
+        0.008,
+        0.0
+      ],
+      "phase": 1
+    },
+    {
+      "name": "Headband cushion",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.0,
+        0.008,
+        0.0
+      ],
+      "phase": 1
+    },
+    {
+      "name": "Headband sliders",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.0,
+        0.008,
+        0.0
+      ],
+      "phase": 1
+    },
+    {
+      "name": "USB-C receptacle",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.026,
+        -0.024,
+        -0.012
+      ],
+      "phase": 2
+    },
+    {
+      "name": "Yoke, left",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.01,
+        0.023,
+        0.0
+      ],
+      "phase": 1
+    },
+    {
+      "name": "Yoke, right",
+      "category": "external",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.01,
+        0.023,
+        0.0
+      ],
+      "phase": 1
+    },
+    {
+      "name": "Left Acoustic Baffle",
+      "category": "structural",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.034,
+        -0.004,
+        0
+      ],
+      "phase": 2,
+      "illustrative": true
+    },
+    {
+      "name": "Left Speaker Driver Basket",
+      "category": "speaker",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.045,
+        0,
+        0
+      ],
+      "phase": 3,
+      "illustrative": true
+    },
+    {
+      "name": "Left Diaphragm",
+      "category": "speaker",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.046,
+        0,
+        0
+      ],
+      "phase": 3,
+      "illustrative": true
+    },
+    {
+      "name": "Left Voice Coil",
+      "category": "speaker",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.039,
+        0,
+        0
+      ],
+      "phase": 3,
+      "illustrative": true
+    },
+    {
+      "name": "Left Magnet Assembly",
+      "category": [
+        "acoustic",
+        "speaker"
+      ],
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.024,
+        0.004,
+        0
+      ],
+      "phase": 4,
+      "illustrative": true
+    },
+    {
+      "name": "Left Magnet Core",
+      "category": "acoustic",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.026,
+        0.004,
+        0
+      ],
+      "phase": 4,
+      "illustrative": true
+    },
+    {
+      "name": "Left Acoustic Damping Ring",
+      "category": "acoustic",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.031,
+        -0.002,
+        0
+      ],
+      "phase": 4,
+      "illustrative": true
+    },
+    {
+      "name": "Right Acoustic Baffle",
+      "category": "structural",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.034,
+        -0.004,
+        0
+      ],
+      "phase": 2,
+      "illustrative": true
+    },
+    {
+      "name": "Right Speaker Driver Basket",
+      "category": "speaker",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.045,
+        0,
+        0
+      ],
+      "phase": 3,
+      "illustrative": true
+    },
+    {
+      "name": "Right Diaphragm",
+      "category": "speaker",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.046,
+        0,
+        0
+      ],
+      "phase": 3,
+      "illustrative": true
+    },
+    {
+      "name": "Right Voice Coil",
+      "category": "speaker",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.039,
+        0,
+        0
+      ],
+      "phase": 3,
+      "illustrative": true
+    },
+    {
+      "name": "Right Magnet Assembly",
+      "category": [
+        "acoustic",
+        "speaker"
+      ],
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.024,
+        0.004,
+        0
+      ],
+      "phase": 4,
+      "illustrative": true
+    },
+    {
+      "name": "Right Magnet Core",
+      "category": "acoustic",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        -0.026,
+        0.004,
+        0
+      ],
+      "phase": 4,
+      "illustrative": true
+    },
+    {
+      "name": "Right Acoustic Damping Ring",
+      "category": "acoustic",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.031,
+        -0.002,
+        0
+      ],
+      "phase": 4,
+      "illustrative": true
+    },
+    {
+      "name": "Right Internal Circuit Board",
+      "category": "electronics",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.031,
+        0.026,
+        0.038
+      ],
+      "phase": 5,
+      "illustrative": true
+    },
+    {
+      "name": "DSP / Codec Package",
+      "category": "electronics",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.039,
+        0.03,
+        0.03
+      ],
+      "phase": 5,
+      "illustrative": true
+    },
+    {
+      "name": "Wireless Module",
+      "category": "electronics",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.042,
+        0.03,
+        0.034
+      ],
+      "phase": 5,
+      "illustrative": true
+    },
+    {
+      "name": "Battery Assembly",
+      "category": "power",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.038,
+        -0.028,
+        0.035
+      ],
+      "phase": 5,
+      "illustrative": true
+    },
+    {
+      "name": "Battery Retainer",
+      "category": "structural",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.04,
+        -0.028,
+        0.035
+      ],
+      "phase": 5,
+      "illustrative": true
+    },
+    {
+      "name": "Flexible Interconnect",
+      "category": "electronics",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.035,
+        -0.006,
+        0.035
+      ],
+      "phase": 5,
+      "illustrative": true
+    },
+    {
+      "name": "Antenna Flex",
+      "category": "electronics",
+      "assemblyTranslation": [
+        0,
+        0,
+        0
+      ],
+      "explodedTranslation": [
+        0.035,
+        0.032,
+        0.032
+      ],
+      "phase": 5,
+      "illustrative": true
+    }
+  ],
+  "sequence": [
+    {
+      "label": "Assembled",
+      "start": 0.0,
+      "end": 0.9,
+      "groups": [
+        "all"
+      ],
+      "pose": "assemblyTranslation"
+    },
+    {
+      "label": "Headband and ear cups separate",
+      "start": 0.9,
+      "end": 2.0,
+      "groups": [
+        "external"
+      ],
+      "pose": "explodedTranslation",
+      "camera": "wide three-quarter"
+    },
+    {
+      "label": "Cushions and outer shells separate",
+      "start": 2.0,
+      "end": 3.3,
+      "groups": [
+        "external"
+      ],
+      "pose": "explodedTranslation",
+      "camera": "cup detail"
+    },
+    {
+      "label": "Speaker assemblies reveal",
+      "start": 3.3,
+      "end": 4.7,
+      "groups": [
+        "speaker",
+        "acoustic"
+      ],
+      "pose": "explodedTranslation",
+      "camera": "speaker close-up"
+    },
+    {
+      "label": "Electronics and battery reveal",
+      "start": 4.7,
+      "end": 6.0,
+      "groups": [
+        "electronics",
+        "power"
+      ],
+      "pose": "explodedTranslation",
+      "camera": "electronics detail"
+    },
+    {
+      "label": "Full exploded view",
+      "start": 6.0,
+      "end": 8.0,
+      "groups": [
+        "all"
+      ],
+      "pose": "explodedTranslation",
+      "camera": "full assembly"
+    },
+    {
+      "label": "Hold then reassemble",
+      "start": 8.0,
+      "end": 12.0,
+      "groups": [
+        "all"
+      ],
+      "pose": "reverse explodedTranslation",
+      "camera": "return to hero"
+    }
+  ],
+  "labels": [
+    {
+      "id": "drivers",
+      "text": "SPEAKER DRIVER / DIAPHRAGM",
+      "anchor": [
+        -0.118,
+        0.048,
+        0.02
+      ],
+      "part": "Left Diaphragm"
+    },
+    {
+      "id": "magnets",
+      "text": "MAGNET / VOICE COIL",
+      "anchor": [
+        0.116,
+        0.05,
+        -0.015
+      ],
+      "part": "Right Magnet Assembly"
+    },
+    {
+      "id": "acoustics",
+      "text": "ACOUSTIC BAFFLE",
+      "anchor": [
+        0.105,
+        0.078,
+        0.02
+      ],
+      "part": "Right Acoustic Baffle"
+    },
+    {
+      "id": "board",
+      "text": "CIRCUIT BOARD / DSP",
+      "anchor": [
+        -0.112,
+        0.087,
+        0.038
+      ],
+      "part": "Right Internal Circuit Board"
+    },
+    {
+      "id": "battery",
+      "text": "BATTERY ASSEMBLY",
+      "anchor": [
+        -0.108,
+        0.012,
+        0.038
+      ],
+      "part": "Battery Assembly"
+    }
+  ],
+  "materialVariants": [
+    {
+      "name": "NEXUS Shell Finish — Black",
+      "baseColorFactor": [
+        0.055,
+        0.064,
+        0.075
+      ],
+      "metallicFactor": 0.12,
+      "roughnessFactor": 0.42,
+      "materialIndex": 5
+    },
+    {
+      "name": "NEXUS Shell Finish — Silver",
+      "baseColorFactor": [
+        0.58,
+        0.63,
+        0.68
+      ],
+      "metallicFactor": 0.52,
+      "roughnessFactor": 0.3,
+      "materialIndex": 9
+    },
+    {
+      "name": "NEXUS Shell Finish — White",
+      "baseColorFactor": [
+        0.9,
+        0.92,
+        0.94
+      ],
+      "metallicFactor": 0.1,
+      "roughnessFactor": 0.34,
+      "materialIndex": 10
+    }
+  ]
+}

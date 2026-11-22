@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEXUS ONE — Asset Preparation Preview</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#090b0e;color:#e7ebee;font:14px/1.55 "Segoe UI",Arial,sans-serif}header{padding:22px 30px 16px;border-bottom:1px solid #293039;display:flex;justify-content:space-between;align-items:end;gap:24px}header .eyebrow{font:10px/1.2 Consolas,monospace;letter-spacing:.17em;color:#92aabd;text-transform:uppercase}h1{font:300 clamp(24px,3vw,38px)/1.1 "Segoe UI",Arial,sans-serif;letter-spacing:-.045em;margin:8px 0 0}header p{max-width:470px;margin:0;color:#929ca5;font-size:12px}.controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 30px;border-bottom:1px solid #293039}.controls label{color:#8b949d;font:10px Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}.controls select{height:34px;border:1px solid #46515c;background:#11151a;color:#e7ebee;padding:0 12px}.controls span{color:#76818a;font-size:11px}.panels{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#293039}.panel{min-width:0;background:#0b0e12}.panel__heading{padding:17px 22px 0;display:flex;justify-content:space-between;align-items:center}.panel__heading h2{font:400 20px/1.2 Georgia,serif;margin:0}.panel__heading small{color:#73808b;font:9px Consolas,monospace;letter-spacing:.11em;text-transform:uppercase}.viewport{height:min(67vh,680px);min-height:400px;position:relative;background:#090c10}.viewport canvas{display:block;width:100%;height:100%}.caption{padding:13px 22px 20px;color:#929ba4;font-size:11px}.caption b{color:#cbd2d8;font-weight:500}.footer{padding:15px 30px;color:#69747e;font:9px Consolas,monospace;letter-spacing:.08em}.loading{position:absolute;inset:0;display:grid;place-items:center;color:#9badbb;font:10px Consolas,monospace;letter-spacing:.12em}.loading.error{color:#e2a4a4}
+    @media(max-width:760px){header{align-items:start;flex-direction:column;padding:20px 18px 15px}.controls{padding:12px 18px}.panels{grid-template-columns:1fr}.viewport{height:54vh;min-height:350px}.footer{padding:14px 18px}}
+  </style>
+  <script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <header><div><div class="eyebrow">NEXUS / ASSET PREPARATION</div><h1>NEXUS ONE — component study</h1></div><p>Assembled and exploded poses from the prepared GLB. Internal electronics and acoustic assemblies are illustrative additions, not verified product engineering.</p></header>
+  <div class="controls"><label for="finish">Shell finish</label><select id="finish"><option value="Black">Black</option><option value="Silver">Silver</option><option value="White">White</option></select><span>Changes only the exterior shell / band material.</span></div>
+  <main class="panels">
+    <section class="panel"><div class="panel__heading"><h2>Assembled</h2><small>Original proportions retained</small></div><div class="viewport" id="assembled"><div class="loading">LOADING MODEL</div></div><div class="caption"><b>Closed state</b> · Original Innerscene exterior with added internal parts held in their assembly positions.</div></section>
+    <section class="panel"><div class="panel__heading"><h2>Exploded</h2><small>Conceptual component layout</small></div><div class="viewport" id="exploded"><div class="loading">LOADING MODEL</div></div><div class="caption"><b>Full exploded state</b> · Each major part uses its stored exploded translation. Labels are listed in <code>exploded-view.json</code>.</div></section>
+  </main>
+  <div class="footer">INNERSCENE SOURCE · CC0 1.0 · GEOMETRY + MATERIAL PREPARATION PREVIEW</div>
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    const rendererOptions={antialias:true,alpha:false,powerPreference:'high-performance'};
+    const setups=[];
+    function mount(targetId, exploded){
+      const el=document.getElementById(targetId), loading=el.querySelector('.loading');
+      const renderer=new THREE.WebGLRenderer(rendererOptions);renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.25));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.08;el.appendChild(renderer.domElement);
+      const scene=new THREE.Scene();scene.background=new THREE.Color('#090c10');
+      const camera=new THREE.PerspectiveCamera(38,1,.01,20);camera.position.set(.31,.235,.40);camera.lookAt(0,.088,0);
+      scene.add(new THREE.HemisphereLight(0xcbd9e5,0x161a20,1.55));
+      const key=new THREE.DirectionalLight(0xf3f6fa,3.1);key.position.set(.25,.42,.55);scene.add(key);
+      const rim=new THREE.DirectionalLight(0x83a6c3,2.1);rim.position.set(-.35,.25,-.4);scene.add(rim);
+      const fill=new THREE.DirectionalLight(0xffffff,.65);fill.position.set(-.3,-.2,.3);scene.add(fill);
+      const resize=()=>{const w=el.clientWidth,h=el.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();renderer.render(scene,camera)};
+      new ResizeObserver(resize).observe(el);
+      new GLTFLoader().load('./nexus-one-prepared.glb',async gltf=>{
+        const root=gltf.scene;root.traverse(o=>{if(o.isMesh){o.castShadow=false;o.receiveShadow=false;}const nx=o.userData?.nexus;if(exploded&&nx?.explodedTranslation){o.position.fromArray(nx.explodedTranslation)}});
+        const variants={};
+        for(let i=0;i<gltf.parser.json.materials.length;i++){const materialDef=gltf.parser.json.materials[i];if(materialDef.name?.startsWith('NEXUS Shell Finish'))variants[materialDef.name]=await gltf.parser.getDependency('material',i)}
+        scene.add(root);setups.push({root,variants,renderer,scene,camera});loading.remove();resize();
+      },undefined,e=>{loading.textContent='MODEL COULD NOT LOAD';loading.classList.add('error');console.error(e)});
+      return renderer;
+    }
+    mount('assembled',false);mount('exploded',true);
+    document.getElementById('finish').addEventListener('change',event=>{
+      const name=`NEXUS Shell Finish — ${event.target.value}`;
+      for(const {root,variants,renderer,scene,camera} of setups){const selected=variants[name];if(!selected)continue;root.traverse(o=>{if(!o.isMesh)return;const replace=m=>m?.name?.startsWith('NEXUS Shell Finish')?selected:m;o.material=Array.isArray(o.material)?o.material.map(replace):replace(o.material)});renderer.render(scene,camera)}
+    });
+  </script>
+</body>
+</html>
